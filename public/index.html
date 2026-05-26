@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Batalha Naval</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="tela-login" class="tela ativa">
+      <div class="login-box">
+        <h1>BATALHA NAVAL</h1>
+        <p class="subtitulo">Multiplayer em tempo real</p>
+        <input
+          id="input-nome"
+          type="text"
+          placeholder="Seu nome de almirante"
+          maxlength="20"
+        />
+        <button id="btn-entrar">Entrar no jogo</button>
+      </div>
+    </div>
+
+    <div id="tela-aguardando" class="tela">
+      <div class="aguardando-box">
+        <div class="spinner"></div>
+        <h2 id="msg-aguardando">Aguardando segundo jogador...</h2>
+        <p id="info-nome"></p>
+      </div>
+    </div>
+
+    <div id="tela-posicionamento" class="tela">
+      <div class="posicionamento-layout">
+        <div class="painel-esquerdo">
+          <h2>Posicione sua frota</h2>
+          <p class="instrucoes">
+            Clique em um navio, escolha rotação e clique no tabuleiro para
+            posicionar.
+          </p>
+          <div id="lista-frota"></div>
+          <div class="controles-rotacao">
+            <button id="btn-horizontal" class="ativo">Horizontal</button>
+            <button id="btn-vertical">Vertical</button>
+          </div>
+          <button id="btn-confirmar" disabled>Confirmar posicionamento</button>
+          <div id="status-oponente-pos" class="status-box"></div>
+        </div>
+        <div class="painel-direito">
+          <h3>Meu tabuleiro</h3>
+          <div id="tabuleiro-posicionamento" class="tabuleiro"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="tela-batalha" class="tela">
+      <div class="batalha-header">
+        <div id="info-partida"></div>
+        <div id="status-turno" class="status-turno"></div>
+      </div>
+      <div class="batalha-layout">
+        <div class="coluna-tabuleiro">
+          <h3>Meu tabuleiro</h3>
+          <div id="tabuleiro-meu" class="tabuleiro"></div>
+          <div id="legenda-minha-frota"></div>
+        </div>
+        <div class="coluna-tabuleiro">
+          <h3>Tabuleiro do inimigo</h3>
+          <div id="tabuleiro-inimigo" class="tabuleiro clicavel"></div>
+        </div>
+      </div>
+      <div id="log-batalha" class="log"></div>
+    </div>
+
+    <div id="tela-fim" class="tela">
+      <div class="fim-box">
+        <h2 id="resultado-texto"></h2>
+        <button id="btn-jogar-novamente">Jogar novamente</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
