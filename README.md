@@ -1,6 +1,6 @@
 # batalha-naval
 
-Jogo de batalha naval utilizando web sockets
+Jogo de batalha naval utilizando web sockets feito para a avaliação da primeira unidade da matéria de JRM (Jogos em Rede Multiusuários)
 
 Para iniciar o jogo basta:
 
@@ -8,5 +8,5 @@ Para iniciar o jogo basta:
 - npm start
 - abrir duas instâncias de localhost:8080 para os jogadores
 
-#Vídeo demonstrando o funcionamento:
+# Vídeo demonstrando o funcionamento:
 https://drive.google.com/file/d/1WoG0VU2VPsvcM4zorDm12vqoveUQBNQo/view?usp=sharing
